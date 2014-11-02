@@ -8,7 +8,7 @@ $(document).ready(function() {
   var $userInput = $('#name');
   var $messages = $('#msgContainer');
   var $chatForm = $('#chatForm');
-  var $inputMessage = $('#chatInput');
+  var $chatInput = $('#chatInput');
 
   var username;
   var connection = false;
@@ -17,19 +17,53 @@ $(document).ready(function() {
 
   function newUser() {
     username = $userInput.val();
-    console.log(username);
 
     if (username) {
       $loginForm.fadeOut();
-      $chatForm.show();
+      $chatForm.fadeIn();
+      console.log(username);
 
-      socket.emit('add user', username)
+      socket.emit('add user', username);
     }
   }
+
+  function sendMessage() {
+    var message = $chatInput.val();
+    if (message) {
+      $chatInput.val('');
+      addMsg({
+        message: message,
+        username: username
+      });
+      
+      socket.emit('new message', message);
+    }
+  }
+
+  function addMsg(details) {
+    var $userP = $('<p>').text(details.username);
+    var $msgP = $('<p>').text(details.message);
+    var $messageItem = $('<li class=chat/>')
+      .data('username', details.username)
+      .append($userP, $msgP);
+    $('msgContainer').append($messageItem);
+
+    }
 
   $loginForm.on('submit', function(event) {
     event.preventDefault();
     newUser();
   });
+
+  $chatForm.on('submit', function(event) {
+    event.preventDefault();
+    sendMessage()
+  });
+
+  socket.on('new message', function(details) {
+    addMsg(details);
+  });
+
+
 
 });
