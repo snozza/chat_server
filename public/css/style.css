@@ -1,0 +1,253 @@
+#container{
+    width:600px;
+    margin:100px auto;
+    position:relative;
+    border: 1px solid #111111;
+}
+
+#container input {
+    height: 26px;
+    font: 100% Arial,sans-serif;
+    color: #111;
+    border: 1px solid;
+    border-color: #c1c1c1 #eee #eee #c1c1c1;
+    text-shadow: 1px 1px 0 #E4E4E4;
+    padding: 0 5px;
+    margin-right: 5px;
+    width: 185px;
+    outline: none;
+  }
+
+
+#top{
+    height:40px;
+    background:url('../img/solid_gray.jpg') repeat-x #d0d0d0;
+    border:1px solid #fff;
+    margin-bottom:15px;
+    position:relative;
+
+    color:#777;
+    text-shadow:1px 1px 0 #FFFFFF;
+}
+
+#top .name{
+    position:absolute;
+    top:10px;
+    left:40px;
+}
+
+#top img{
+    left:9px;
+    position:absolute;
+    top:8px;
+}
+
+#msgContainer{
+    height:360px;
+    width:350px;
+    margin-bottom:20px;
+    outline:none;
+}
+
+.chat{
+    background:#d5d5d5;
+    min-height:24px;
+    padding:6px;
+    border:1px solid #FFFFFF;
+
+    padding:8px 6px 4px 37px;
+    position:relative;
+    margin:0 10px 10px 0;
+}
+
+.chat:last-child{
+    margin-bottom:0;
+}
+
+.chat .gravatar{
+    background:url('http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?size=23') no-repeat;
+    left:7px;
+    position:absolute;
+    top:7px;
+}
+
+.chat img{
+    display:block;
+    visibility:hidden;
+}
+
+#users{
+    background-color:#202020;
+    border:1px solid #111111;
+    height:360px;
+    position:absolute;
+    right:0;
+    top:56px;
+    width:150px;
+}
+
+#users .user{
+    background:url('http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?size=30') no-repeat 1px 1px #444444;
+    border:1px solid #111111;
+    float:left;
+    height:32px;
+    margin:10px 0 0 10px;
+    width:32px;
+}
+
+#users .user img{
+    border:1px solid #444444;
+    display:block;
+    visibility:hidden;
+}
+
+#bottom{
+    background: #d0d0d0;
+    position:relative;
+    padding:10px;
+    border:0px solid #fff;
+}
+
+#chatForm{
+    display:none;
+}
+
+
+
+#container .blueButton{
+    background:#00BFFF ;
+    border:none !important;
+    color:black !important;
+    display:inline-block;
+    font-size:100%;
+    height:29px;
+    text-align:center;
+    text-shadow:1px 1px 0 rgba(255, 255, 255, 0.4);
+    width:75px;
+    margin:0;
+    cursor:pointer;
+}
+
+#container .blueButton:hover{
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.rounded {
+  border-radius: 25px;
+}
+
+form {
+
+
+.jspContainer
+{
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane
+{
+  position: absolute;
+}
+
+.jspVerticalBar{
+    background:none;
+    width:20px;
+}
+
+.jspHorizontalBar
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background: red;
+}
+
+.jspCap
+{
+  display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+  float: left;
+}
+
+.jspTrack
+{
+  background: #dde;
+  position: relative;
+}
+
+.jspDrag
+{
+  background: #bbd;
+  width:20px;
+  left:-9px;
+  height:20px !important;
+  margin-top:-5px;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+  float: left;
+  height: 100%;
+}
+
+.jspArrow
+{
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.jspArrow.jspDisabled
+{
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+  height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+  width: 16px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+  outline: none;
+}
+
+.jspCorner
+{
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+.jspDrag:hover{
+    background-position:left bottom;
+}
+
+* html .jspCorner
+{
+  margin: 0 -3px 0 0;
+}

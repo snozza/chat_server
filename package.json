@@ -1,0 +1,23 @@
+{
+  "name": "chat_server",
+  "version": "1.0.0",
+  "description": "Basic Chat Server",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snozza/chat_server.git"
+  },
+  "author": "Andrew Snead",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snozza/chat_server/issues"
+  },
+  "homepage": "https://github.com/snozza/chat_server",
+  "dependencies": {
+    "express": "^4.10.1",
+    "socket.io": "^1.2.0"
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WebChat</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+
+<article id="container">
+
+    <section id="top" class="rounded"></section>
+    <section id="msgContainer"></section>
+
+    <aside id="users" class="rounded"></aside>
+    <article id="bottom" class="rounded">
+
+        <form id="login" method="post" action="">
+            <input id="name" name="name" class="rounded" maxlength="16" placeholder="enter a username"/>
+            <input type="submit" class="blueButton" value="Login" />
+        </form>
+
+        <form id="chatForm" method="post" action="">
+            <input id="chatInput" name="chatText" class="rounded" maxlength="200" />
+            <input type="submit" class="blueButton" value="Submit" />
+        </form>
+
+    </article>
+
+</article>
+
+<script src="/scripts/jquery-1.11.1.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/scripts/interface.js"></script>
+
+<script src="/scripts/jquery.mousewheel.js"></script>
+<script src="/scripts/jquery.jscrollpane.min.js"></script>
+
+</body>
+</html>
