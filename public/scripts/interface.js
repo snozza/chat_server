@@ -46,7 +46,9 @@ $(document).ready(function() {
     var $messageItem = $('<li class=chat/>')
       .data('username', details.username)
       .append($userP, $msgP);
-    $('msgContainer').append($messageItem);
+    $messages.append($messageItem);
+    $messages[0].scrollTop = $messages[0].scrollHeight;
+    console.log($messages[0])
 
     }
 

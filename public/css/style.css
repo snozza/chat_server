@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+
 #container{
     width:600px;
     margin:100px auto;
@@ -44,14 +49,23 @@
 
 #msgContainer{
     height:360px;
-    width:350px;
+    width:70%;
     margin-bottom:20px;
-    outline:none;
+    outline: none;
+    overflow-y: scroll;
 }
+
+.messages
+{
+  height: 10%;
+  padding-left: 11px;
+}
+
+
 
 .chat{
     background:#d5d5d5;
-    min-height:24px;
+    min-height:15px;
     padding:6px;
     border:1px solid #FFFFFF;
 
